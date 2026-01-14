@@ -22,7 +22,7 @@ export function ProductCard({
   description,
   items = [],
   tone = "default",
-  eligible,
+  eligible = true,
   onClick,
 }) {
   const clickable = typeof onClick === "function";
@@ -34,7 +34,7 @@ export function ProductCard({
       role={clickable ? "button" : undefined}
       tabIndex={clickable ? 0 : undefined}
       onClick={clickable ? onClick : undefined}
-      aria-disabled={!eligible}
+      aria-disabled={false}
     >
       {/* Header */}
       <header className="pc__header">
