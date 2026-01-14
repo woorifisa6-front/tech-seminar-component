@@ -25,7 +25,7 @@ export function ProductCard({
   eligible,
   onClick,
 }) {
-  const clickable = typeof onClick === "function" && eligible;
+  const clickable = typeof onClick === "function";
   const byLabel = new Map(items.map((it) => [it.label, it]));
 
   return (
