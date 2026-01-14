@@ -2,6 +2,7 @@
   "name": "woori-product-component",
   "version": "0.1.2",
   "private": false,
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"

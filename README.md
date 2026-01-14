@@ -27,3 +27,10 @@ npm install woori-product-component
 # or
 yarn add woori-product-component
 ```
+
+## Disclaimer
+
+This project is intended for **educational and demonstration purposes only**.
+
+It is **not affiliated with, endorsed by, or sponsored by Woori Bank**.
+All product names, brands, and trademarks are the property of their respective owners.
