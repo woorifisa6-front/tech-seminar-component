@@ -1,6 +1,6 @@
 {
   "name": "woori-product-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "files": [
@@ -12,7 +12,8 @@
     ".": {
       "import": "./dist/woori-product-component.js",
       "require": "./dist/woori-product-component.umd.cjs"
-    }
+    },
+    "./style.css": "./dist/woori-product-component.css"
   },
   "scripts": {
     "dev": "vite",
