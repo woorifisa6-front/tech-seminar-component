@@ -13,6 +13,7 @@
   --color-text-muted: #80888e;
 
   --color-accent: #0b71fe;
+  --color-warning: #e5484d;
   --color-accent-soft-border: #dee2e6;
 
   /* ===== Radius ===== */
@@ -27,8 +28,8 @@
   --space-row-padding-y: 9px;
 
   /* ===== Typography ===== */
-  --font-title-size: 17px;
-  --font-title-weight: 600;
+  --font-title-size: 18px;
+  --font-title-weight: 700;
 
   --font-desc-size: 14px;
   --font-desc-weight: 400;

@@ -17,6 +17,7 @@ createRoot(document.getElementById("root")).render(
         { label: "예상이자", value: "최대 XXX만원", highlight: true },
       ]}
       tone="recommend"
+      eligible={false}
       onClick={() => console.log("상품 클릭됨")}
     />
   </React.StrictMode>

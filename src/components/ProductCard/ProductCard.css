@@ -79,3 +79,20 @@
 .pc__value--highlight {
   color: var(--color-accent);
 }
+
+.pc__eligibility {
+  display: flex;
+  align-items: center;
+  gap: var(--space-header-gap);
+  margin-top: 10px;
+  color: var(--color-warning);
+}
+
+.pc__eligibility-icon {
+  display: inline-flex;
+}
+
+.pc__eligibility-text {
+  font-size: var(--font-desc-size);
+  padding-top: 2px;
+}
