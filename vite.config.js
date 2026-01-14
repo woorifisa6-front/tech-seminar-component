@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.js",
-      name: "ProductCardUI",
-      fileName: "product-card-ui",
+      name: "WooriProductComponent",
+      fileName: "woori-product-component",
     },
     rollupOptions: {
       external: ["react", "react-dom"],

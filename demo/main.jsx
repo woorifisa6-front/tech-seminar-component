@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import "./styles/tokens.css";
-import { ProductCard } from "./index";
+import "../src/index";
+import { ProductCard } from "../src/index";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")).render(
         { label: "예상이자", value: "최대 XXX만원", highlight: true },
       ]}
       tone="recommend"
-      onClick={() => {}}
+      onClick={() => console.log("상품 클릭됨")}
     />
   </React.StrictMode>
 );
