@@ -1,74 +1,60 @@
 import "./ProductCard.css";
 
+const LABELS = ["예상금리", "기간", "금액", "예상이자"];
+
 /**
- * ProductCard
- *
- * 공용 금융 상품 카드 컴포넌트
- *
+ * @typedef {{ label: string; value: string; highlight?: boolean }} ProductItem
+ */
+
+/**
  * @param {{
- *  title: string,                         // 상품명
- *  description?: string,                 // 상품 설명
- *  items: {                              // 상품 정보 리스트
- *    label: string;
- *    value: string;
- *    highlight?: boolean;
- *  }[],
- *  tone?: "default" | "recommend",        // 카드 스타일 톤
- *  onClick?: () => void                   // 클릭 핸들러
+ *  title: string,
+ *  description?: string,
+ *  items?: ProductItem[],
+ *  tone?: "default" | "recommend",
+ *  onClick?: () => void
  * }} props
  */
 
 export function ProductCard({
-  //   title,
-  //   description,
-  //   items,
+  title,
+  description,
+  items = [],
   tone = "default",
   onClick,
 }) {
+  const clickable = typeof onClick === "function";
+  const byLabel = new Map(items.map((it) => [it.label, it]));
+
   return (
     <div
       className={`pc pc--${tone}`}
-      role={onClick ? "button" : undefined}
-      tabIndex={onClick ? 0 : undefined}
+      role={clickable ? "button" : undefined}
+      tabIndex={clickable ? 0 : undefined}
       onClick={onClick}
     >
       <header className="pc__header">
-        {/* 상품명 */}
-        <h3 className="pc__title">
-          {/*
-            title
-            ex) "우리 첫거래우대 정기예금"
-          */}
-        </h3>
-
-        {/* 상품 설명 */}
-        {/*
-          description && (
-            <p className="pc__desc">
-              상품에 대한 간단한 설명 텍스트
-            </p>
-          )
-        */}
+        <h3 className="pc__title">{title}</h3>
+        {description ? <p className="pc__desc">{description}</p> : null}
       </header>
 
       <div className="pc__box">
         <ul className="pc__list">
-          {/*
-            items.map((item) => (
-              <li key={item.label} className="pc__row">
-                <span className="pc__label">
-                  item.label
-                </span>
+          {LABELS.map((label) => {
+            const item = byLabel.get(label);
+            return (
+              <li key={label} className="pc__row">
+                <span className="pc__label">{label}</span>
                 <span
-                  className={`pc__value ${
-                    item.highlight ? "pc__value--highlight" : ""
+                  className={`pc__value${
+                    item?.highlight ? " pc__value--highlight" : ""
                   }`}
                 >
-                  item.value
+                  {item?.value ?? "-"}
                 </span>
               </li>
-            ))
-          */}
+            );
+          })}
         </ul>
       </div>
     </div>

@@ -1,0 +1,81 @@
+/* ===== Root ===== */
+.pc {
+  display: block;
+  box-sizing: border-box;
+
+  width: var(--pc-width);
+  max-width: var(--pc-max-width);
+  min-height: var(--pc-min-height);
+
+  padding: var(--space-card-padding);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.pc--recommend {
+  border-color: var(--color-accent-soft-border);
+}
+
+.pc[role="button"] {
+  cursor: pointer;
+}
+
+/* ===== Header ===== */
+.pc__header {
+  margin-bottom: var(--space-box-padding);
+}
+
+.pc__title {
+  margin: 0;
+  font-size: var(--font-title-size);
+  font-weight: var(--font-title-weight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-tight);
+}
+
+.pc__desc,
+.pc__label {
+  font-size: var(--font-desc-size);
+  color: var(--color-text-muted);
+}
+
+.pc__desc {
+  margin-top: var(--space-header-gap);
+  line-height: var(--line-height-desc);
+}
+
+/* ===== Box ===== */
+.pc__box {
+  padding: var(--space-box-padding);
+  background: var(--color-surface-muted);
+  border-radius: var(--radius-inner);
+}
+
+/* ===== List ===== */
+.pc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pc__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-row-padding-y);
+  padding: var(--space-row-padding-y) 0;
+}
+
+/* ===== Value ===== */
+.pc__value {
+  font-size: var(--font-value-size);
+  font-weight: var(--font-value-weight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-tight);
+  text-align: right;
+}
+
+.pc__value--highlight {
+  color: var(--color-accent);
+}

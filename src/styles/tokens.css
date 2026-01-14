@@ -1,1 +1,44 @@
-/* tokens.css */
+:root {
+  /* ===== ProductCard Size ===== */
+  --pc-width: 100%;
+  --pc-max-width: 360px;
+  --pc-min-height: 200px;
+
+  /* ===== Color ===== */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8f9f9;
+  --color-border: #dee2e6;
+
+  --color-text: #3d4248;
+  --color-text-muted: #80888e;
+
+  --color-accent: #0b71fe;
+  --color-accent-soft-border: #dee2e6;
+
+  /* ===== Radius ===== */
+  --radius-card: 20px;
+  --radius-inner: 16px;
+
+  /* ===== Spacing ===== */
+  --space-card-padding: 24px;
+  --space-header-gap: 5px;
+
+  --space-box-padding: 16px;
+  --space-row-padding-y: 9px;
+
+  /* ===== Typography ===== */
+  --font-title-size: 17px;
+  --font-title-weight: 600;
+
+  --font-desc-size: 14px;
+  --font-desc-weight: 400;
+
+  --font-label-size: 15px;
+  --font-label-weight: 500;
+
+  --font-value-size: 15px;
+  --font-value-weight: 500;
+
+  --letter-tight: -0.2px;
+  --line-height-desc: 1.4;
+}
