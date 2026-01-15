@@ -1,22 +1,23 @@
 # woori-product-component
 
-금융 애플리케이션에서 사용할 수 있는 **상품 정보 카드(ProductCard) UI 컴포넌트 라이브러리**입니다.  
-React 기반으로 설계되었으며, **디자인 시스템 토큰(CSS Variables)** 을 활용해  
-다양한 프로젝트 환경에서 재사용할 수 있도록 구현되었습니다.
+A **ProductCard UI component library** for financial applications.
 
-> 본 패키지는 UI 컴포넌트만 제공하며,  
-> 라우팅·데이터 패칭·비즈니스 로직에는 의존하지 않습니다.
+This library is built with React and uses **design system tokens (CSS Variables)**  
+to enable easy reuse across different projects and environments.
+
+> This package provides UI components only.  
+> It does not include routing, data fetching, or business logic.
 
 ---
 
 ## ✨ Features
 
-- 💳 금융 상품 요약 카드 UI (예금/적금/대출 등)
-- 🎨 CSS 변수 기반 디자인 토큰 적용
-- ♻️ props 기반 재사용 가능한 컴포넌트 설계
-- 🧭 페이지 이동은 `href` / `onClick`으로 외부 위임
-- ♿ 접근성 고려 (role, tabIndex, keyboard interaction)
-- 🧩 React 의존 최소화 (`peerDependencies`)
+- 💳 Financial product summary card UI (deposit, savings, loan, etc.)
+- 🎨 CSS Variables–based design tokens
+- ♻️ Reusable component design using props
+- 🧭 Navigation delegated via `href` or `onClick`
+- ♿ Accessibility considerations (role, tabIndex, keyboard interaction)
+- 🧩 Minimal React dependencies (`peerDependencies` only)
 
 ---
 

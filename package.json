@@ -1,6 +1,32 @@
 {
   "name": "woori-product-component",
   "version": "0.1.6",
+  "description": "A lightweight React UI component library created as part of an npm module practice project at Woori FISA, designed to demonstrate reusable component design with minimal dependencies.",
+  "keywords": [
+    "woori",
+    "woori-component",
+    "woori-product-card",
+    "woori-product-component",
+    "woori-fisa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woorifisa6-front/tech-seminar-component"
+  },
+  "contributors": [
+    {
+      "name": "Woojae"
+    },
+    {
+      "name": "Jaeha"
+    },
+    {
+      "name": "Hyeyoon"
+    },
+    {
+      "name": "Jimin"
+    }
+  ],
   "private": false,
   "license": "MIT",
   "type": "module",
